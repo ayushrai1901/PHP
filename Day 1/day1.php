@@ -1,7 +1,7 @@
 <?php
     //Gloabal & Local Scope
     //A variable decalared outside a function has a global scope & can only be accessed outside the function.
-    $x =5;
+    /*$x =5;
     function globalScope(){
         echo "Variable x inside function is: $x"; // This will cause an error because $x is not defined in this scope
     }
@@ -19,9 +19,19 @@
 
     test();
     echo "Variable x outside function is: $x"; // This will cause an error because $x is not defined in this scope
+*/
 
+    //The Global Keyword is used to access a global variable from within a function
 
-    //The Global Keyword
-    
+    $x=5;
+    $y =10;
+
+    function myTest(){
+        global $x, $y;
+        $y= $x+$y;
+    }
+    myTest();
+    echo $y; // This will output 15 because $y is now the sum of $x and $y
+
 
     ?>
