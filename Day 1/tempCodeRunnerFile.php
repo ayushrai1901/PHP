@@ -1,8 +1,9 @@
 <?php
-function test(){
-        $x =5;
-        echo "Variable x inside function is: $x"; // This will work because $x is defined in this scope
-    }
+//Comparison Operators
+//If statement usually contains conditions that compare two values
 
-    test();
-    echo "Variable x outside function is: $x"; // This will cause an error because $x is not defined in this scope
+$k =14;
+if($k==0){
+    echo "Have a good day & keep learning PHP";
+}
+?>
