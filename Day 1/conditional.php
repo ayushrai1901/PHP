@@ -34,6 +34,20 @@ if($t<20){
     echo "Have a good night";
 }
 
+?>
 
+<?php
+//PHP Nested if statement
 
+// if statement inside another if statement is called nested if statement
+
+$a =13;
+if($a>10){
+    echo "Above 10";
+    if($a>20){
+        echo " and also above 20";
+    }else{
+        echo "but not above 20";
+    }
+}
 ?>
