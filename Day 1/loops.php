@@ -86,7 +86,6 @@ for($x=0; $x<=10; $x++){
  foreach($members as $x=>$y){
     echo "$x : $y <br>";
  }
-
-
+ 
 
 ?>
